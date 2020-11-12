@@ -1,0 +1,26 @@
+<template>
+    <div class="whole" >
+        <lightning-card >
+            <div slot="footer" class="slds-grid slds-grid_vertical-align-center container">
+                <div class="weather-icon"><img class="slds-col" src={iconURL}/></div>
+                <div class="slds-col text-left">
+                    <p>{cityName}, {temp}°C</p>
+                    <p>{localTime}</p>
+                </div>
+                <div class="text-left">
+                    <p>Feels like: {feelslike}°C</p>
+                    <p>Wind: {wind} m/s</p>
+                    <p>Pressure: {pressure} hPa</p>
+                    <p>Humidity: {humidity}%</p>
+                </div>
+            </div>
+            <div slot="title" onkeyup={handleKeyUp}>
+                    <lightning-input
+                        name="enter-search"
+                        label="Choose the City"
+                        type="search"
+                    ></lightning-input>
+            </div>
+        </lightning-card>
+    </div>
+</template>

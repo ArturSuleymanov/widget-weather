@@ -1,0 +1,19 @@
+.whole {
+    max-width: 600px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 125px repeat(auto-fit, minmax(125px, 1fr));
+    grid-template-rows: repeat(auto-fit, 100px);    
+/*    background-image: url("https://wallpapers-all.com/uploads/posts/2016-12/10_blue_sky.jpg"); */
+}
+
+.weather-icon {
+    max-width: 100px;
+}
